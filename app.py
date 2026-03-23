@@ -60,14 +60,14 @@ st.markdown("""
 
 # ── Sidebar: API key ───────────────────────────────────────────────────────────
 with st.sidebar:
-    # st.header("⚙️ Cài đặt")
-    # api_key_input = st.text_input(
-    #     "Anthropic API Key",
-    #     type="password",
-    #     placeholder="sk-ant-...",
-    #     help="Cần để nhận dạng tên môn học không chuẩn bằng AI. "
-    #          "Trên Streamlit Cloud, đặt secret ANTHROPIC_API_KEY thay vì nhập ở đây.",
-    # )
+    st.header("⚙️ Cài đặt")
+    api_key_input = st.text_input(
+        "Anthropic API Key",
+        type="password",
+        placeholder="sk-ant-...",
+        help="Cần để nhận dạng tên môn học không chuẩn bằng AI. "
+             "Trên Streamlit Cloud, đặt secret ANTHROPIC_API_KEY thay vì nhập ở đây.",
+    )
     st.markdown("---")
         st.header("📝 HƯỚNG DẪN")
         st.markdown("""
