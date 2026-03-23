@@ -69,8 +69,8 @@ with st.sidebar:
              "Trên Streamlit Cloud, đặt secret ANTHROPIC_API_KEY thay vì nhập ở đây.",
     )
     st.markdown("---")
-        st.header("📝 HƯỚNG DẪN")
-        st.markdown("""
+    st.header("📝 HƯỚNG DẪN")
+    st.markdown("""
         1. Chuẩn bị file Excel có sheet **Data**
         2. Sheet Data cần có các cột:
            - **TT**: Số thứ tự
