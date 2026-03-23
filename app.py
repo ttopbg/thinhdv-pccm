@@ -60,22 +60,28 @@ st.markdown("""
 
 # ── Sidebar: API key ───────────────────────────────────────────────────────────
 with st.sidebar:
-    st.header("⚙️ Cài đặt")
-    api_key_input = st.text_input(
-        "Anthropic API Key",
-        type="password",
-        placeholder="sk-ant-...",
-        help="Cần để nhận dạng tên môn học không chuẩn bằng AI. "
-             "Trên Streamlit Cloud, đặt secret ANTHROPIC_API_KEY thay vì nhập ở đây.",
-    )
+    # st.header("⚙️ Cài đặt")
+    # api_key_input = st.text_input(
+    #     "Anthropic API Key",
+    #     type="password",
+    #     placeholder="sk-ant-...",
+    #     help="Cần để nhận dạng tên môn học không chuẩn bằng AI. "
+    #          "Trên Streamlit Cloud, đặt secret ANTHROPIC_API_KEY thay vì nhập ở đây.",
+    # )
     st.markdown("---")
-    st.markdown("**Hướng dẫn deploy:**")
-    st.markdown("""
-1. Push code lên GitHub
-2. Vào [streamlit.io/cloud](https://streamlit.io/cloud)
-3. New app → chọn repo → `app.py`
-4. Settings → Secrets → thêm `ANTHROPIC_API_KEY`
-""")
+        st.header("📝 HƯỚNG DẪN")
+        st.markdown("""
+        1. Chuẩn bị file Excel có sheet **Data**
+        2. Sheet Data cần có các cột:
+           - **TT**: Số thứ tự
+           - **Họ và tên**: Tên giáo viên
+           - **Ngày sinh**: Ngày sinh
+           - **PCCM**: Phân công chuyên môn
+        3. Tải file lên hệ thống
+        4. Chọn niên khóa
+        5. Nhấn **XỬ LÝ DỮ LIỆU**
+        6. Tải file kết quả
+        """)
 
 # ── Lấy API key (ưu tiên secrets, sau đó input) ───────────────────────────────
 try:
