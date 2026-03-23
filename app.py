@@ -72,7 +72,7 @@ with st.sidebar:
     st.header("📝 HƯỚNG DẪN")
     st.markdown("""
         1. Chuẩn bị file Excel có sheet **Data**
-        2. Sheet Data cần có các cột:
+        2. Sheet Data cần có các cột (tên cột có thể gần đúng):
            - **TT**: Số thứ tự
            - **Họ và tên**: Tên giáo viên
            - **Ngày sinh**: Ngày sinh
