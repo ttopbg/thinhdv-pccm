@@ -16,7 +16,7 @@ NIEN_KHOA_OPTIONS = ["2025-2026", "2026-2027", "2027-2028"]
 
 # ── Cấu hình trang ────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Chuyển đổi dữ liệu giáo viên",
+    page_title="Convert PCCM",
     page_icon="🏫",
     layout="centered",
 )
@@ -53,8 +53,8 @@ st.markdown("""
 # ── Header ────────────────────────────────────────────────────────────────────
 st.markdown("""
 <div class="main-header">
-  <h1>🏫 Chuyển đổi dữ liệu giáo viên</h1>
-  <p>Tự động chuyển đổi từ sheet <b>Data</b> → <b>Class / Teachers / Students</b></p>
+  <h1>🏫 CONVERT PCCM</h1>
+  <p>File đầu vào cần có sheet Data</p>
 </div>
 """, unsafe_allow_html=True)
 
